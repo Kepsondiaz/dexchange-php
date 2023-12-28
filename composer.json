@@ -22,7 +22,12 @@
     },
     "config": {
         "allow-plugins": {
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "pestphp/pest-plugin": true
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6",
+        "pestphp/pest": "1.x-dev"
     }
 }
