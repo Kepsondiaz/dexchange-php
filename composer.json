@@ -1,0 +1,28 @@
+{
+    "name": "kepson/dexchange-php",
+    "description": "dexchange api sdk for php",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Dexchange\\Client\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kepsondiaz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/options-resolver": "6.4.x-dev",
+        "php-http/discovery": "1.x-dev",
+        "guzzlehttp/guzzle": "7.9.x-dev",
+        "php-http/client-common": "2.x-dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

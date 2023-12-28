@@ -1,0 +1,6 @@
+.history
+composer.phar
+/vendor/
+composer.lock
+build
+.idea
