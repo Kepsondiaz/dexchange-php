@@ -3,7 +3,10 @@ declare(strict_types=1);
 
 namespace Dexchange\Client;
 
+use Dexchange\Client\Endpoint\ListServices;
+use Dexchange\Client\Endpoint\Transactions;
 use Http\Client\Common\Plugin\BaseUriPlugin;
+use Http\Client\Common\HttpMethodsClientInterface;
 use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
 
 class DexchangeSdk 
@@ -24,5 +27,20 @@ class DexchangeSdk
                 ]
             )
         );
+    }
+
+    public function getHttpClient(): HttpMethodsClientInterface
+    {
+        return $this->clientBuilder->getHttpClient();
+    }
+
+    public function Transactions(): Transactions
+    {
+        return new Endpoint\Transactions($this);
+    }
+
+    public function ListServices(): ListServices
+    {
+        return new Endpoint\ListServices($this);
     }
 }
