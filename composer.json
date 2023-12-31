@@ -18,7 +18,8 @@
         "symfony/options-resolver": "6.4.x-dev",
         "php-http/discovery": "1.x-dev",
         "guzzlehttp/guzzle": "7.9.x-dev",
-        "php-http/client-common": "2.x-dev"
+        "php-http/client-common": "2.x-dev",
+        "php-http/guzzle7-adapter": "1.x-dev"
     },
     "config": {
         "allow-plugins": {
