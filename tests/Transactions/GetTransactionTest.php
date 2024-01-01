@@ -11,7 +11,7 @@ it('should get transaction', function() {
     $apikey = '8fcdca23474b7d2612534df';
     $dexchangeSdk = new DexchangeSdk($apikey, $options);
 
-    $dexchangeSdkMock = Mockery::mock('Transactions', ['alalSdk' => $dexchangeSdk]);
+    $dexchangeSdkMock = Mockery::mock('Transactions', ['dexchangeSdk' => $dexchangeSdk]);
 
     $dexchangeSdkMock->shouldReceive('getTransaction')
     ->with('transactionId')

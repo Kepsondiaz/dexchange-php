@@ -11,7 +11,7 @@ it('should initialise new transaction', function() {
     $apikey = '8fcdca23474b7d2612534df';
     $dexchangeSdk = new DexchangeSdk($apikey, $options);
 
-    $dexchangeSdkMock = Mockery::mock('Transactions', ['alalSdk' => $dexchangeSdk]);
+    $dexchangeSdkMock = Mockery::mock('Transactions', ['dexchangeSdk' => $dexchangeSdk]);
 
     $dexchangeSdkMock->shouldReceive('initTransaction')
     ->with(123, 'callBackURL', 'externalTransactionId', 'failureUrl', '20231228', 'serviceCode', 'successUrl')
