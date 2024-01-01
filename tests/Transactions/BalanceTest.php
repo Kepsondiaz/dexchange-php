@@ -6,7 +6,7 @@ use Mockery;
 use Dexchange\Client\Options;
 use Dexchange\Client\DexchangeSdk;
 
-it('should get transaction', function() {
+it('should get balance', function() {
     $options = new Options('production');
     $apikey = '8fcdca23474b7d2612534df';
     $dexchangeSdk = new DexchangeSdk($apikey, $options);
