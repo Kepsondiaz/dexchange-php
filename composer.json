@@ -10,7 +10,8 @@
     },
     "authors": [
         {
-            "name": "Kepsondiaz"
+            "name": "Kepsondiaz",
+            "email": "kherabadiaby328@gmail.com"
         }
     ],
     "minimum-stability": "dev",
