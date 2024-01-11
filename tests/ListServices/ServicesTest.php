@@ -19,6 +19,6 @@ it('should get services', function() {
 
     $result =  $dexchangeSdkMock->getServices();
 
-    expect($result)->toBe(['data' => ['country', 'serviceName', 'serviceId', 'ServiceName', 'serviceType'], "message" => "get all services", "statusCode" => "200"]);
+    expect($result)->toBe(['data' => ['country', 'serviceId', 'serviceName', 'serviceType'], "message" => "get transaction", "statusCode" => "200"]);
 
 }); 
