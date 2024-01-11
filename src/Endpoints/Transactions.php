@@ -33,5 +33,10 @@ final class Transactions
         return ResponseMediator::getContent($this->sdk->getHttpClient()->get("https://api-m.dexchange.sn/api/v1/api-services/balance"));
     }
 
+    public function wizallWithdraw(string $otp, string $transactionId): array
+    {
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->post("$this->baseUri/confirm/wizall ", [], json_encode('otp', 'transactionId')));
+    }
+
     
 }
