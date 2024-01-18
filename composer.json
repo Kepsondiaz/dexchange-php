@@ -1,5 +1,5 @@
 {
-    "name": "kepson/dexchange-php",
+    "name": "kepson/dexchange",
     "description": "dexchange api sdk for php",
     "type": "library",
     "license": "MIT",
