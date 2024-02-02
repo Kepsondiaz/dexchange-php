@@ -25,7 +25,7 @@ final class Transactions
 
     public function getTransaction(string $transactionId): array
     {
-        return ResponseMediator::getContent($this->sdk->getHttpClient()->get("$this->baseUri?transactionId=$transactionId"));
+        return ResponseMediator::getContent($this->sdk->getHttpClient()->get("$this->baseUri/$transactionId"));
     }
 
     public function getBalance(): array
