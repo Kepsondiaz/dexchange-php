@@ -5,7 +5,9 @@ A PHP sdk to interact with Dexchange's API
 
 ### With Composer
 
-`composer require kepson/dexchange-php`
+```php
+composer require kepson/dexchange-php
+```
 
 ## REQUIREMENTS
 - PHP 8.0+
